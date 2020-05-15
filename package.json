@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-mysql-authentication",
+  "version": "1.0.0",
+  "description": "nodejs login with jwt token",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "nodejs",
+    "jwt",
+    "passport",
+    "express"
+  ],
+  "author": "Arjun Araneta",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "jsonwebtoken": "^7.4.3",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.7.0",
+    "react-paypal-express-checkout": "^1.0.5",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
